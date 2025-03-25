@@ -2,4 +2,171 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 69%;
+  margin: auto;
+}
+
+.header {
+  background-color: white;
+  height: 80px;
+
+  border-bottom: #ebebeb 4px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: black;
+  font-size: 23px;
+}
+
+.logo span {
+  color: #2c7eb7;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.logo h3 {
+  color: #94c0df;
+  font-size: 10px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+.contacts {
+  font-size: 15px;
+  color: #324f7e;
+}
+/* body */
+
+.body h2 {
+  margin-top: 40px;
+  font-size: 38px;
+  color: #1c1b23;
+  text-align: center;
+  font-weight: 900;
+}
+
+form {
+  text-align: center;
+  margin-top: 40px;
+}
+
+form select {
+  width: 327px;
+  height: 54px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+form select option {
+  background-color: #4b4b4b;
+  color: white;
+  position: 5px;
+}
+
+form p {
+  font-size: 15px;
+  color: black;
+  margin: 20px 0;
+}
+
+form button {
+  border: none;
+  background-color: #2c7eb7;
+  color: white;
+  width: 327px;
+  height: 54px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.term_privcy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 10px;
+}
+
+.term_privcy p {
+  padding: 0 10px;
+}
+.mesit {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+/* footer */
+
+.footer {
+  background-color: #ebebeb;
+  color: black;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+/* page2 */
+.page2 h2 {
+  margin-top: 40px;
+  font-size: 38px;
+  color: #1c1b23;
+  text-align: center;
+  font-weight: 900;
+}
+
+.page2 label {
+  display: block;
+  margin-top: 5px;
+}
+
+.page2 input {
+  width: 523px;
+  height: 60px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 15px;
+  background-color: #ebebeb;
+}
+
+.page2 button {
+  margin-top: 20px;
+}
+
+/* tble */
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
