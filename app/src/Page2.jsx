@@ -5,6 +5,7 @@ import { useStore } from './zustand/zustang';
 const Page2 = () => {
   const [tedhenat, setDhenat] = useState({});
   const { tedhenatUser, setDhenatuser, setPages } = useStore();
+  const [checked, setChecked] = React.useState(true);
 
   const handleChange = (event) => {
     const name = event.target.name;
@@ -14,6 +15,19 @@ const Page2 = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (checked === false) {
+      alert('You must agree to the terms and conditions');
+      return;
+    }
+    if (
+      !tedhenatUser.firstname ||
+      !tedhenatUser.lastname ||
+      !tedhenatUser.email ||
+      !tedhenatUser.phonenumber
+    ) {
+      alert('Please fill all the fields');
+      return;
+    }
     setDhenatuser(tedhenat);
     setPages(2);
   };
@@ -57,6 +71,14 @@ const Page2 = () => {
             onChange={handleChange}
             placeholder='phonenumber'
           />
+        </label>
+        <label className='checkbox'>
+          <input
+            type='checkbox'
+            defaultChecked={checked}
+            onChange={() => setChecked((state) => !state)}
+          />
+          You must agree to the terms and conditions
         </label>
         <button>SUBMIT TO YOUR DETAILS</button>
         <div className='term_privcy'>

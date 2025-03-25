@@ -12,6 +12,10 @@ const Page1 = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (input === '') {
+      alert('Please select a time');
+      return;
+    }
     setTimeMeting(input);
     setPages(1);
   };

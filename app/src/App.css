@@ -147,6 +147,18 @@ form button {
   background-color: #ebebeb;
 }
 
+.checkbox {
+  margin: 15px auto;
+  width: 523px;
+  padding: 10px;
+}
+
+.page2 input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
 .page2 button {
   margin-top: 20px;
 }
