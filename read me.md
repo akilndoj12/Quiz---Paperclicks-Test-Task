@@ -1,2 +1,0 @@
-# Quiz - Paperclicks Test Task
-#
